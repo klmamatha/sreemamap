@@ -1,0 +1,161 @@
+/* General App styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.portfolio {
+  font-size: 35px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #03022b;
+  z-index: 1000;
+  margin: 0px;
+  padding: 0%;
+}
+
+footer {
+  margin-top: 20px;
+  /* Add margin to separate footer from sections */
+}
+
+/* Styling for the fixed navbar */
+.navbar {
+  position: fixed;
+  /* Fixes the navbar */
+  top: 0;
+  /* Position it at the top */
+  width: 100%;
+  /* Makes it span the entire width of the page */
+  background-color: #03022b;
+  /* Background color */
+  padding: 10px;
+  /* Padding around the links */
+  z-index: 1000;
+  /* Ensures the navbar is always on top */
+}
+
+.navbar ul {
+  list-style-type: none;
+  /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  /* Evenly space out the links */
+}
+
+.navbar ul li {
+  color: white;
+  /* Text color for the nav links */
+  cursor: pointer;
+  /* Change cursor on hover */
+  padding: 10px 15px;
+  /* Add some padding for better spacing */
+}
+
+.navbar ul li:hover {
+  background-color: #377791;
+  /* Highlight active section */
+  font-weight: bold;
+}
+
+/* Add some margin to the top of the content to avoid overlap with the fixed navbar */
+section {
+  margin-top: 60px;
+  /* Adjust this value based on navbar height */
+}
+
+/* Navbar styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 0;
+  background-color: #03022b;
+}
+
+nav ul li {
+  display: inline;
+  color: #f2f5f5;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Ensure main content is not hidden under the navbar */
+main {
+  padding-top: 80px;
+  /* Adjust this value based on navbar height */
+}
+
+/* Home page specific styling */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 80px);
+  /* Adjust based on the height of the header */
+  padding: 0 50px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 2rem;
+}
+
+.resume-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.floating-image {
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.chat-button button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

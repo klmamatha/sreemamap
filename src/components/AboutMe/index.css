@@ -1,0 +1,27 @@
+.about-section {
+    background-color: #001f3f;
+    /* Dark blue background */
+    color: white;
+    /* White text for contrast */
+    height: 100vh;
+    /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: azure;
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.5;
+}

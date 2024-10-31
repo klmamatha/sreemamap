@@ -1,0 +1,26 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-right {
+    margin-right: 20px;
+}
+
+.footer-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.footer-center a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
